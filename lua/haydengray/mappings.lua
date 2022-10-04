@@ -1,4 +1,5 @@
 vim.g.mapleader = ' '
+vim.keymap.set('n', '<leader>fe', ':Rexplore<CR>', {})
 
 local telescope_present, builtin = pcall(require, 'telescope.builtin')
 if not telescope_present then
