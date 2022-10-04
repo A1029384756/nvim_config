@@ -1,4 +1,13 @@
-require("mason").setup({
+local mason_present, mason = pcall(require, 'mason')
+if not mason_present then
+  return
+end
+local mason_lsp_present, mason_lsp = pcall(require, 'mason-lspconfig')
+if not mason_lsp_present then
+  return
+end
+
+mason.setup({
   ui = {
     icons = {
       package_installed = "✓",
@@ -7,4 +16,5 @@ require("mason").setup({
     }
   }
 })
-require("mason-lspconfig").setup()
+
+mason_lsp.setup()

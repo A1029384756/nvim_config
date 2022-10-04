@@ -1,4 +1,12 @@
-local lsp = require('lsp-zero')
+local lsp_present, lsp = pcall(require, 'lsp-zero')
+if not lsp_present then
+  return
+end
+local ts_present, ts = pcall(require, 'nvim-treesitter.configs')
+if not ts_present then
+  return
+end
+
 lsp.preset('recommended')
 lsp.nvim_workspace()
 lsp.setup_nvim_cmp({
@@ -43,7 +51,7 @@ vim.diagnostic.config({
   float = true,
 })
 
-require('nvim-treesitter.configs').setup({
+ts.setup({
   ensure_installed = "all",
   highlight = { enable = true },
   indent = { enable = true }
