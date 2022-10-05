@@ -19,3 +19,5 @@ vim.keymap.set('n', '<leader>mf', require('harpoon.mark').add_file, {})
 vim.keymap.set('n', '<leader>rm', require('harpoon.mark').rm_file, {})
 vim.keymap.set('n', '<leader>hf', require('harpoon.ui').toggle_quick_menu, {})
 vim.keymap.set('n', '<leader>fh', ':Telescope harpoon marks<CR>', {})
+
+vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
