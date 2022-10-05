@@ -21,3 +21,4 @@ vim.keymap.set('n', '<leader>hf', require('harpoon.ui').toggle_quick_menu, {})
 vim.keymap.set('n', '<leader>fh', ':Telescope harpoon marks<CR>', {})
 
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
