@@ -1,6 +1,9 @@
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>fe', ':Rexplore<CR>', {})
 
+--folding
+vim.keymap.set('n', '<leader>sf', 'za', {})
+
 local telescope_present, builtin = pcall(require, 'telescope.builtin')
 if not telescope_present then
   return
@@ -21,3 +24,4 @@ vim.keymap.set('n', '<leader>hf', require('harpoon.ui').toggle_quick_menu, {})
 vim.keymap.set('n', '<leader>fh', ':Telescope harpoon marks<CR>', {})
 
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})

@@ -8,6 +8,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.autoindent = true
 vim.opt.ch = 0
+vim.opt.clipboard = "unnamedplus"
 
 local theme_present, theme = pcall(require, 'one_monokai')
 if theme_present then
@@ -24,3 +25,7 @@ if theme_present then
   vim.cmd([[colorscheme one_monokai]])
 end
 
+--Folding options
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99
