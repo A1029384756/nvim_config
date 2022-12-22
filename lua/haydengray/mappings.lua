@@ -1,5 +1,5 @@
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>fe', ':Rexplore<CR>', {})
+vim.keymap.set('n', '<leader>fe', ':E<CR>', {})
 
 --folding
 vim.keymap.set('n', '<leader>sf', 'za', {})
