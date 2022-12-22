@@ -9,6 +9,7 @@ vim.opt.shiftwidth = 2
 vim.opt.autoindent = true
 vim.opt.ch = 0
 vim.opt.clipboard = "unnamedplus"
+vim.opt.scrolloff = 10
 
 local theme_present, theme = pcall(require, 'one_monokai')
 if theme_present then
