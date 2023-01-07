@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>fe', ':E<CR><CR>', {})
+vim.keymap.set('n', '<esc>', ':noh<CR>', {})
 
 --folding
 vim.keymap.set('n', '<leader>sf', 'za', {})
