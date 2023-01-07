@@ -2,9 +2,6 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>fe', ':E<CR><CR>', {})
 vim.keymap.set('n', '<esc>', ':noh<CR>', {})
 
---folding
-vim.keymap.set('n', '<leader>sf', 'za', {})
-
 local telescope_present, builtin = pcall(require, 'telescope.builtin')
 if not telescope_present then
   return
