@@ -31,14 +31,14 @@ return require('packer').startup(function(use)
 		end
 	}
 
-	use { 'feline-nvim/feline.nvim' }
+  use 'nvim-lualine/lualine.nvim'
 
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 		require("toggleterm").setup()
 	end}
 
 	use 'nvim-treesitter/nvim-treesitter'
-  use "cpea2506/one_monokai.nvim"
+  use 'ellisonleao/gruvbox.nvim'
 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
