@@ -23,7 +23,7 @@ lsp.setup_nvim_cmp({
         nvim_lsp = 'λ',
         luasnip = '⋗',
         buffer = 'Ω',
-        path = '🖫',
+        path = '',
         nvim_lua = 'Π',
       }
 
